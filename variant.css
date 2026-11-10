@@ -1,13 +1,13 @@
 /* Variant "Taste Skill — hero B" (faceguard): editorial, type-led page.
-   One system: cool newsprint-grey ground, ink type, one vermilion accent, one ink band; Archivo (wdth axis) for display and text,
-   JetBrains Mono for labels. Overrides the shared base style.css; self-sufficient for type sizes. */
+   One system: light ground, ink type, one blue accent, one alternate-ground band; Inter for everything
+   (house palette and font, brief 4). Overrides the shared base style.css; self-sufficient for type sizes. */
 :root{
-  --bg:#eceeeb; --ink:#121412; --muted:#4d524d; --line:#c6cbc5; --card:#eceeeb; --alt:#e0e3df;
-  --accent:#b8321a; --accent-ink:#ffffff;
-  --inv-bg:#121412; --inv-ink:#eceeeb; --inv-muted:#aab0aa; --inv-line:#343a35; --inv-accent:#ff8a63;
-  --f-display:"Archivo",ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
-  --f-text:"Archivo",ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
-  --f-mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  --bg:#fcfcfc; --ink:#05080b; --muted:#5c646f; --line:#dfe1e5; --card:#ffffff; --alt:#f7f8f9;
+  --accent:#006acf; --accent-ink:#ffffff; --accent-soft:#d6efff; --deco:#b1ddff; --focus:#0086dd;
+  --inv-bg:#f7f8f9; --inv-ink:#05080b; --inv-muted:#5c646f; --inv-line:#dfe1e5; --inv-accent:#006acf;
+  --f-display:"Inter",ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  --f-text:"Inter",ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  --f-mono:"Inter",ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
   --gut:clamp(16px,4vw,48px);
   --t-body:17px; --t-small:14px; --t-label:12px; --t-h3:21px; --t-lede:clamp(19px,1.6vw,23px);
   --t-h2:clamp(40px,6.2vw,96px); --t-h1:clamp(44px,min(12.4vw,17.5svh),164px); --t-close:clamp(56px,12.5vw,200px);
@@ -17,10 +17,10 @@ html{scroll-behavior:smooth;scroll-padding-top:72px}
 body{background:var(--bg);color:var(--ink);font-family:var(--f-text);font-size:var(--t-body);line-height:1.6;font-stretch:100%;overflow-x:hidden}
 .wrap{max-width:1360px;margin:0 auto;padding:0 var(--gut)}
 a{color:var(--ink)}
-:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+:focus-visible{outline:2px solid var(--focus);outline-offset:3px}
 
 /* masthead */
-header.mast{background:rgb(236 238 235 / .94);border-bottom:1px solid var(--ink);backdrop-filter:blur(8px)}
+header.mast{background:rgb(252 252 252 / .94);border-bottom:1px solid var(--ink);backdrop-filter:blur(8px)}
 header.mast .wrap{min-height:64px;flex-wrap:nowrap}
 .logo{font-family:var(--f-display);font-size:20px;line-height:24px;font-weight:800;font-stretch:80%;letter-spacing:-.01em;text-transform:uppercase}
 .logo a{display:inline-block;padding:10px 0;color:var(--ink)}
@@ -37,8 +37,8 @@ p{margin:0}
 .label,.kicker{font-family:var(--f-mono);font-size:var(--t-label);line-height:16px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
 .muted{color:var(--muted)}
 
-/* buttons: one style, ink solid that steps to accent */
-a.cta{display:inline-flex;align-items:center;gap:12px;margin:0;padding:18px 30px;border-radius:999px;background:var(--ink);color:var(--inv-ink);font-family:var(--f-text);font-size:17px;line-height:22px;font-weight:600;text-decoration:none;transition:background-color .2s var(--ease),transform .2s var(--ease)}
+/* buttons: one style, accent solid with white text */
+a.cta{display:inline-flex;align-items:center;gap:12px;margin:0;padding:18px 30px;border-radius:999px;background:var(--accent);color:var(--accent-ink);font-family:var(--f-text);font-size:17px;line-height:22px;font-weight:600;text-decoration:none;transition:background-color .2s var(--ease),transform .2s var(--ease)}
 a.cta::after{content:"";width:18px;height:2px;background:currentColor;box-shadow:none;transition:width .25s var(--ease)}
 a.cta:hover{background:var(--accent);opacity:1;transform:translateY(-1px)}
 a.cta:hover::after{width:26px}
@@ -78,13 +78,13 @@ section{padding:0;border-top:0}
 .card{background:transparent;border:0;border-radius:0;border-left:1px solid var(--line);padding:28px clamp(16px,1.8vw,28px) 32px clamp(16px,1.6vw,24px);display:flex;flex-direction:column;gap:10px;transition:transform .2s var(--ease),background-color .2s var(--ease)}
 
 .card:hover{transform:translateY(-2px)}
-.card .num{font-family:var(--f-display);font-style:normal;font-size:clamp(56px,6vw,88px);line-height:1;font-weight:300;font-stretch:70%;color:var(--accent);letter-spacing:-.04em;margin-bottom:18px}
+.card .num{font-family:var(--f-display);font-style:normal;font-size:clamp(56px,6vw,88px);line-height:1;font-weight:300;font-stretch:70%;color:var(--deco);letter-spacing:-.04em;margin-bottom:18px}
 .card > b{font-family:var(--f-display);font-size:24px;line-height:1.15;font-weight:750;font-stretch:85%;letter-spacing:-.015em;margin:0;color:var(--ink)}
 .card span{font-size:var(--t-body);line-height:1.55;color:var(--muted);flex:1}
 .card .btn{align-self:flex-start;margin-top:14px;padding:12px 0;border:0;border-radius:0;background:none;font-size:15px;line-height:20px;font-weight:600;color:var(--ink);text-decoration:none;background-image:linear-gradient(currentColor,currentColor);background-size:100% 1.5px;background-position:0 calc(100% - 8px);background-repeat:no-repeat;transition:background-size .25s var(--ease),color .2s}
 .card .btn:hover{background-color:transparent;color:var(--accent);background-size:40% 1.5px}
 
-/* example: the one ink band */
+/* example: the one alternate-ground band */
 .wrap > section.sec-ink{position:relative;color:var(--inv-ink);border-top:0;margin-inline:calc(-1 * var(--gut));padding-inline:var(--gut);background:var(--inv-bg);box-shadow:0 0 0 100vmax var(--inv-bg);clip-path:inset(0 -100vmax)}
 .ex{grid-column:1 / -1;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:40px clamp(16px,2vw,32px)}
 .ex-head{grid-column:1 / span 4}
@@ -93,8 +93,8 @@ section{padding:0;border-top:0}
 .ex-story{grid-column:6 / span 7;font-family:var(--f-display);font-size:clamp(24px,2.6vw,38px);line-height:1.38;font-weight:400;font-stretch:92%;letter-spacing:-.012em;color:var(--inv-ink);text-wrap:pretty}
 .ex-story::first-letter{color:var(--inv-accent)}
 .ex-act{grid-column:6 / span 7}
-.sec-ink a.cta{background:var(--inv-ink);color:var(--ink)}
-.sec-ink a.cta:hover{background:var(--inv-accent);color:var(--ink)}
+.sec-ink a.cta{background:var(--accent);color:var(--accent-ink)}
+.sec-ink a.cta:hover{background:var(--accent);color:var(--accent-ink)}
 
 /* how it works: rail heading, two-column text with a drop cap */
 .cols{grid-column:1 / -1;column-count:3;column-gap:clamp(24px,3vw,48px);column-rule:1px solid var(--line)}
@@ -117,9 +117,9 @@ section{padding:0;border-top:0}
 .start-row{grid-column:1 / -1;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px clamp(16px,2vw,32px);align-items:end;padding-top:28px;border-top:2px solid var(--ink)}
 .field{grid-column:1 / span 6;display:flex;flex-direction:column;gap:8px}
 .field label{font-family:var(--f-mono);font-size:var(--t-label);line-height:16px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
-.field select{width:100%;min-width:0;margin:0!important;padding:16px 44px 16px 16px!important;font-family:var(--f-text);font-size:17px!important;line-height:22px;color:var(--ink);background:var(--bg) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath d='M2 4.5l4 4 4-4' fill='none' stroke='%23121412' stroke-width='1.6'/%3E%3C/svg%3E") no-repeat right 16px center;border:1.5px solid var(--ink);border-radius:0;appearance:none;-webkit-appearance:none;cursor:pointer}
+.field select{width:100%;min-width:0;margin:0!important;padding:16px 44px 16px 16px!important;font-family:var(--f-text);font-size:17px!important;line-height:22px;color:var(--ink);background:var(--bg) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath d='M2 4.5l4 4 4-4' fill='none' stroke='%2305080b' stroke-width='1.6'/%3E%3C/svg%3E") no-repeat right 16px center;border:1.5px solid var(--ink);border-radius:0;appearance:none;-webkit-appearance:none;cursor:pointer}
 .field select:hover{background-color:var(--alt)}
-.field select:focus{outline:2px solid var(--accent);outline-offset:2px}
+.field select:focus{outline:2px solid var(--focus);outline-offset:2px}
 .start-act{grid-column:8 / span 5}
 
 /* footer */
@@ -171,9 +171,9 @@ footer .muted{color:var(--inv-muted);margin:0;grid-column:7 / span 6}
   .close-type{font-size:clamp(56px,17vw,96px)}
   .start-row{grid-template-columns:1fr}
   .field,.start-act{grid-column:1 / -1}
-  footer .wrap{grid-template-columns:1fr}
+  footer .wrap{grid-template-columns:minmax(0,1fr)}
   footer p,footer .muted{grid-column:1 / -1}
-  footer .foot-mark{font-size:clamp(48px,17vw,96px)}
+  footer .foot-mark{font-size:clamp(40px,13vw,96px)} /* Inter has no width axis: narrower size keeps the mark inside 375px */
 }
 
 @media (prefers-reduced-motion:reduce){
