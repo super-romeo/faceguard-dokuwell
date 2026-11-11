@@ -15,6 +15,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="description" content="For private individuals: find where photos of your face appear online, get alerts on new ones and send takedown requests with letters.">
 <link rel="icon" href="favicon.svg">
 <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="variant.css">
 <script src="smoke.js" defer></script>
 <!-- faq-jsonld:start -->
 <script type="application/ld+json">
@@ -73,38 +77,68 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-<header><div class="wrap">
-  <div class="logo"><a href="index.html" data-ev="click_logo_home">FaceGuard</a></div>
-  <nav class="top"><a href="#what" data-ev="click_nav_what">What you get</a><a href="price.html" data-ev="click_nav_price">Price</a><a href="#example" data-ev="click_nav_example">Example</a><a href="#start" data-ev="click_nav_start">Start</a></nav>
+<header><div class="shell">
+  <a class="home" href="index.html" data-ev="click_logo_home">FaceGuard</a>
+  <nav><a href="#what" data-ev="click_nav_what">What you get</a><a href="price.html" data-ev="click_nav_price">Price</a><a href="#example" data-ev="click_nav_example">Example</a><a href="#start" data-ev="click_nav_start">Start</a></nav>
 </div></header>
 
-<div class="wrap">
-  <div class="hero">
-    <h1>Find where your face appears online — and get help taking it down</h1>
-    <p class="sub">For private individuals: upload a photo of yourself, see the pages on the open web where your face appears, get an alert when it shows up somewhere new, and send takedown requests with letters prepared for you.</p>
-    <a class="cta" href="price.html" data-ev="cta_click">I need this</a>
-    <p class="cta-note">Service in preparation · No payment is accepted on this page</p>
-  </div>
+<main class="shell">
+  <section class="split">
+    <div class="stack">
+      <p class="meta rise"><span class="dot"></span> For private individuals</p>
+      <h1 class="rise" style="--i:1">Find where your face appears online&nbsp;<span class="soft">— and get help taking it down</span></h1>
+      <p class="rise" style="--i:2">For private individuals: upload a photo of yourself, see the pages on the open web where your face appears, get an alert when it shows up somewhere new, and send takedown requests with letters prepared for you.</p>
+      <a class="button rise" style="--i:3" href="price.html" data-ev="cta_click">I need this</a>
+      <p class="meta rise" style="--i:4">Service in preparation · No payment is accepted on this page</p>
+    </div>
+    <figure class="window rise" style="--i:2"><svg aria-hidden="true" focusable="false" class="shot" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect width="1200" height="800" fill="#eef2f7" /><rect x="80" y="80" width="1040" height="640" rx="24" stroke="#dde2ea" stroke-width="3" fill="#ffffff" /><text x="130" y="168" font-size="40" fill="#0a1524" font-weight="600">FaceGuard</text><line x1="120" y1="210" x2="1080" y2="210" stroke="#dde2ea" stroke-width="3" /><rect x="130" y="260" width="44" height="44" rx="8" fill="#dfe8f7" /><text x="196" y="292" font-size="32" fill="#0a1524" font-weight="600">Search by face</text><rect x="130" y="360" width="44" height="44" rx="8" fill="#12397a" /><text x="196" y="392" font-size="32" fill="#0a1524" font-weight="600">Alerts</text><rect x="130" y="460" width="320" height="22" rx="8" fill="#dde2ea" /><rect x="130" y="510" width="240" height="22" rx="8" fill="#b9c3d2" /><rect x="130" y="560" width="280" height="22" rx="8" fill="#dde2ea" /><rect x="700" y="260" width="360" height="400" rx="20" fill="#dfe8f7" /><text x="730" y="320" font-size="32" fill="#0a1524" font-weight="600">Takedown letters</text><line x1="760" y1="600" x2="1000" y2="600" stroke="#b9c3d2" stroke-width="4" /><rect x="776" y="480" width="40" height="120" rx="8" fill="#dfe8f7" /><rect x="836" y="420" width="40" height="180" rx="8" fill="#12397a" /><rect x="896" y="510" width="40" height="90" rx="8" fill="#dfe8f7" /><rect x="956" y="450" width="40" height="150" rx="8" fill="#dfe8f7" /></svg></figure>
+    <dl class="facts">
+      <div><dt>For</dt><dd>Private individuals</dd></div>
+      <div><dt>Search</dt><dd>Pages on the open web</dd></div>
+      <div><dt>Upload</dt><dd>Upload a photo</dd></div>
+      <div><dt>Status</dt><dd>In preparation</dd></div>
+    </dl>
+  </section>
 
   <section id="what" data-view="features_view">
-    <h2>What you get</h2>
-    <div class="grid">
-      <div class="card"><b>Search by face</b><span>Pages on the open web where photos of your face appear.</span><br><a class="btn" href="price.html" data-ev="feature_search">I need this</a></div>
-      <div class="card"><b>Alerts</b><span>A message when your face appears on a new page.</span><br><a class="btn" href="price.html" data-ev="feature_alerts">I need this</a></div>
-      <div class="card"><b>Takedown letters</b><span>Prepared requests to the site owner or host, with the page and the photo.</span><br><a class="btn" href="price.html" data-ev="feature_takedown">I need this</a></div>
-      <div class="card"><b>Request tracking</b><span>Every request and its status until the photo is removed.</span><br><a class="btn" href="price.html" data-ev="feature_tracking">I need this</a></div>
+    <div class="stack"><h2>What you get</h2></div>
+    <div class="bento">
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="70" y="50" width="660" height="500" rx="22" stroke="#dde2ea" stroke-width="3" fill="#ffffff" /><text x="110" y="124" font-size="32" fill="#0a1524" font-weight="600">Search by face</text><rect x="140" y="190" width="40" height="40" rx="8" fill="#12397a" /><polyline points="148,210 156,220 172,202" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" /><rect x="198" y="198" width="240" height="22" rx="8" fill="#dde2ea" /><rect x="140" y="268" width="40" height="40" rx="8" fill="#dfe8f7" /><rect x="198" y="276" width="180" height="22" rx="8" fill="#dde2ea" /><rect x="140" y="346" width="40" height="40" rx="8" fill="#dfe8f7" /><rect x="198" y="354" width="280" height="22" rx="8" fill="#dde2ea" /><circle cx="560" cy="340" r="70" fill="#dfe8f7" /><circle cx="560" cy="340" r="28" fill="#12397a" /></svg></div>
+        <h3>Search by face</h3><p>Pages on the open web where photos of your face appear.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_search">I need this</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="70" y="50" width="660" height="500" rx="22" stroke="#dde2ea" stroke-width="3" fill="#ffffff" /><text x="110" y="124" font-size="32" fill="#0a1524" font-weight="600">Alerts</text><rect x="180" y="200" width="280" height="160" rx="28" stroke="#dde2ea" stroke-width="3" fill="#ffffff" /><polygon points="220,360 250,360 228,396" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><rect x="208" y="236" width="180" height="18" rx="8" fill="#dde2ea" /><rect x="208" y="270" width="140" height="18" rx="8" fill="#b9c3d2" /><rect x="208" y="308" width="90" height="28" rx="14" fill="#12397a" /></svg></div>
+        <h3>Alerts</h3><p>A message when your face appears on a new page.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_alerts">I need this</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="70" y="50" width="660" height="500" rx="22" stroke="#dde2ea" stroke-width="3" fill="#ffffff" /><text x="110" y="124" font-size="32" fill="#0a1524" font-weight="600">Takedown letters</text><rect x="160" y="180" width="420" height="320" rx="18" stroke="#dde2ea" stroke-width="3" fill="#ffffff" /><rect x="184" y="208" width="189.0" height="16" rx="8" fill="#12397a" /><rect x="184" y="248" width="294" height="22" rx="8" fill="#dde2ea" /><rect x="184" y="296" width="210" height="22" rx="8" fill="#b9c3d2" /><rect x="184" y="344" width="260" height="22" rx="8" fill="#dde2ea" /><circle cx="520" cy="200" r="36" fill="#dfe8f7" /><polyline points="500,200 516,218 546,184" fill="none" stroke="#12397a" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" /></svg></div>
+        <h3>Takedown letters</h3><p>Prepared requests to the site owner or host, with the page and the photo.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_takedown">I need this</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="70" y="50" width="660" height="500" rx="22" stroke="#dde2ea" stroke-width="3" fill="#ffffff" /><text x="110" y="124" font-size="32" fill="#0a1524" font-weight="600">Request tracking</text><rect x="160" y="200" width="300" height="52" rx="26" stroke="#dde2ea" stroke-width="3" fill="#ffffff" /><rect x="160" y="278" width="220" height="52" rx="26" fill="#12397a" /><rect x="160" y="356" width="260" height="52" rx="26" stroke="#dde2ea" stroke-width="3" fill="#ffffff" /></svg></div>
+        <h3>Request tracking</h3><p>Every request and its status until the photo is removed.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_tracking">I need this</a>
+      </article>
     </div>
   </section>
 
-  <section id="example" data-view="example_view">
-    <h2>Example (fictional data)</h2>
-    <p class="fine">A teacher finds her profile photo used on a dating site she never joined. FaceGuard shows it on 4 pages; 3 are fake profiles. Takedown letters to the three sites are prepared with the links and her original photo; two are removed within a week, the third request is resent to the host.</p>
-    <a class="cta" href="price.html" data-ev="click_cta_after_example">Choose your plan</a>
+  <section id="example" data-view="example_view" class="split flip">
+    <div class="stack">
+      <h2>Example</h2>
+      <p>A teacher finds her profile photo used on a dating site she never joined. FaceGuard shows it on 4 pages; 3 are fake profiles. Takedown letters to the three sites are prepared with the links and her original photo; two are removed within a week, the third request is resent to the host.</p>
+    <a class="button" href="price.html" data-ev="click_cta_after_example">Choose your plan</a>
+    </div>
+<svg aria-hidden="true" focusable="false" class="shot reveal" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect width="1200" height="800" fill="#eef2f7" /><line x1="240" y1="160" x2="960" y2="160" stroke="#dde2ea" stroke-width="6" /><circle cx="240" cy="160" r="22" stroke="#12397a" stroke-width="6" fill="#ffffff" /><text x="240" y="230" font-size="32" fill="#0a1524" font-weight="600" text-anchor="middle">4 pages</text><circle cx="600" cy="160" r="22" stroke="#12397a" stroke-width="6" fill="#ffffff" /><text x="600" y="230" font-size="32" fill="#0a1524" font-weight="600" text-anchor="middle">fake profiles</text><circle cx="960" cy="160" r="22" fill="#12397a" /><text x="960" y="230" font-size="32" fill="#0a1524" font-weight="600" text-anchor="middle">removed</text><rect x="120" y="300" width="960" height="420" rx="24" stroke="#dde2ea" stroke-width="3" fill="#ffffff" /><text x="170" y="380" font-size="36" fill="#0a1524" font-weight="600">Takedown letters</text><rect x="170" y="440" width="420" height="22" rx="8" fill="#dde2ea" /><rect x="170" y="488" width="300" height="22" rx="8" fill="#b9c3d2" /><rect x="170" y="536" width="360" height="22" rx="8" fill="#dde2ea" /><circle cx="860" cy="520" r="70" fill="#dfe8f7" /><polyline points="830,520 852,546 900,486" fill="none" stroke="#12397a" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" /></svg>
   </section>
 <!-- seo-tekst:start -->
-  <section id="opis">
-    <h2>How it works</h2>
-    <p>Photos of private people end up in places they never agreed to: fake profiles on dating sites, scam advertisements, forums, sites that collect pictures from social networks. Most people only learn about it by chance. Finding every copy by hand is impossible, and asking each site to remove it takes time and the right words. FaceGuard searches the open web for your face and helps you ask for removal.</p>
+  <section id="opis" class="split flip">
+    <div class="stack"><h2>How it works</h2></div>
+    <div class="stack">
+      <p>Photos of private people end up in places they never agreed to: fake profiles on dating sites, scam advertisements, forums, sites that collect pictures from social networks. Most people only learn about it by chance. Finding every copy by hand is impossible, and asking each site to remove it takes time and the right words. FaceGuard searches the open web for your face and helps you ask for removal.</p>
     <p>You start by uploading one or more photos of yourself and confirming that the face is yours. The search covers the open web — pages that anyone can reach without logging in. It shows the pages where your face appears, with a preview, so you can see what each page is and how the photo is used.</p>
     <p>You mark each result: fine, not me, or to be removed. Results you mark as fine, such as your employer's website, are not shown again. The rest stay on your list until they are handled.</p>
     <p>For each page you want removed, FaceGuard prepares a takedown request: to the site owner, to the host when the owner does not answer, or through the site's own reporting form. The request names the page, includes the photo and explains why you want it removed. You review and send it, or let it be sent from the service.</p>
@@ -114,31 +148,34 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <p>FaceGuard is for private individuals in English-speaking countries and the European Union who want to know where their face is used and to ask for its removal.</p>
     <p>You can add more photos of yourself at different ages and in different settings, which helps the search find older pictures that look less like your current photo.</p>
     <p>FaceGuard is not a law firm and does not give legal advice. Sites and hosts decide on each request; FaceGuard cannot guarantee removal.</p>
+    </div>
   </section>
   <section id="faq">
-    <h2>Questions</h2>
-    <h3>Who is it for?</h3>
-    <p>Private individuals who want to find and remove photos of their face on the open web.</p>
-    <h3>What does the search cover?</h3>
-    <p>Pages on the open web that can be reached without logging in.</p>
-    <h3>Do you send takedown requests for me?</h3>
-    <p>Requests are prepared for you; you review them and send them, or let the service send them.</p>
-    <h3>Can you guarantee removal?</h3>
-    <p>No. Sites and hosts decide on each request.</p>
-    <h3>Can I use it already?</h3>
-    <p>Not yet. The service is in preparation, and we are checking whether people need it.</p>
+    <div class="stack"><h2>Questions</h2></div>
+    <div class="rows">
+      <div class="split flip"><h3>Who is it for?</h3><p>Private individuals who want to find and remove photos of their face on the open web.</p></div>
+      <div class="split flip"><h3>What does the search cover?</h3><p>Pages on the open web that can be reached without logging in.</p></div>
+      <div class="split flip"><h3>Do you send takedown requests for me?</h3><p>Requests are prepared for you; you review them and send them, or let the service send them.</p></div>
+      <div class="split flip"><h3>Can you guarantee removal?</h3><p>No. Sites and hosts decide on each request.</p></div>
+      <div class="split flip"><h3>Can I use it already?</h3><p>Not yet. The service is in preparation, and we are checking whether people need it.</p></div>
+    </div>
   </section>
 <!-- seo-tekst:end -->
-  <section id="start" data-view="start_view">
-    <h2>Start your search</h2>
-    <p><label>What worries you most<br><select data-ev-focus="form_start" style="margin-top:6px;padding:8px;font-size:16px"><option value="">— please choose —</option><option>Fake profiles</option><option>Scam advertisements</option><option>Photos shared without consent</option><option>I just want to know</option></select></label></p>
-    <a class="cta" href="price.html" data-ev="form_submit_click">Start search</a>
+  <section id="start" data-view="start_view" class="split">
+    <div class="stack">
+      <h2>Start your search</h2>
+    </div>
+    <div class="tile stack">
+      <label>What worries you most<select data-ev-focus="form_start"><option value="">— please choose —</option><option>Fake profiles</option><option>Scam advertisements</option><option>Photos shared without consent</option><option>I just want to know</option></select></label>
+      <a class="button" href="price.html" data-ev="form_submit_click">Start search</a>
+    </div>
   </section>
-</div>
+</main>
 
-<footer><div class="wrap">
+<footer><div class="shell">
+  <p><b>FaceGuard</b></p>
   <p><a href="privacy.html" data-ev="click_legal_privacy">Privacy</a></p>
-  <p class="muted">Not a law firm and no legal advice. Sites and hosts decide on each request; removal cannot be guaranteed.</p>
+  <p>Not a law firm and no legal advice. Sites and hosts decide on each request; removal cannot be guaranteed.</p>
 </div></footer>
 
 </body>
